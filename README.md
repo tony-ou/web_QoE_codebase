@@ -52,9 +52,14 @@ The way we run QoE study on Mturk is like this: we host our own web page server 
 
 5. Finish and publish a batch.
 
-
+Some Tips for crowdsourced mturk study: 
+1. Choose master workers to get better reliable results.
+2. Leave some leniant time so workers are not rushed.
+3. Pay attention to the email after experiment starts, in case workers complain that server is down.
+4. Workers search for HITs by hourly rate, so give reasonable payment to make the study finish faster. (But don't pay too much, the cost is high since Mturk also takes about 30% platform fee)
 
 ## Step 3: Analyze Data
+After we collected data, we should filter out bad responses and create plots/statistics for our data points. Then use these data points to check if experiment confirms/rebuts the hypothesis. How this is done is also included in the link for server codebase for this is here ([Crowdsourcing study(https://www.webpagetest.org/). 
 
 
 # II. Other Resources
@@ -65,6 +70,4 @@ https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/
 
 https://drive.google.com/file/d/1FAdnkJYzjX6kjI79ouP2zQmxX8hjwE2N/view?usp=sharing
 
-## Amazon EC2
 
-## Mturk
