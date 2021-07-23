@@ -23,7 +23,7 @@ It is possible to do page recording in batch, but the public version of WPT does
 
 Often times, we want to modify page loading process and ask users to rate changed page. We can modify page's source code and achieve the effect (sometimes this would be very hard), but a much more straightforward way is to modify a video of page load (an example is: [base video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/baseline.mp4) and [modified video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/LoadA_delay1.mp4)). 
 
-To do this, we start with a baseline page load video, either using a real page load video or creating an artificial one from image of page (see more on how to do this in the example jupyter notebooks mentioned later). Then, we can apply many transformations: delaying/speeding elements of a page or even repositioning certain elements. We use a Python library, [Moviepy](https://zulko.github.io/moviepy/), to achieve these effects. Example jupyter notebooks can be found [here](https://github.com/tony-ou/web_QoE_video_creation). 
+To do this, we start with a baseline page load video, either using a real page load video or creating an artificial one from image of page (see more on how to do this in the example jupyter notebooks mentioned later). Then, we can apply many transformations: delaying/speeding elements of a page or even repositioning certain elements. We use a Python library, [Moviepy](https://zulko.github.io/moviepy/), to achieve these effects. Example jupyter notebooks can be found [here](https://github.com/tony-ou/web_QoE_video_creation/blob/main/video_creation.ipynb). 
 
 We can also edit videos with other tools like adobe premiere pro.
 
