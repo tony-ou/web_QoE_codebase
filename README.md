@@ -66,9 +66,8 @@ After we collected data, we should filter out bad responses and create plots/sta
 
 ## Related Literature
 To gain more context on QoE research and Crowdsourcing techinques, one can refer to literature in following doc as a start point: 
-https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/edit?usp=sharing
 
-https://drive.google.com/file/d/1FAdnkJYzjX6kjI79ouP2zQmxX8hjwE2N/view?usp=sharing
+https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/edit?usp=sharing
 
 
 ## [WebGaze](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kelton) Dataset (their original website is down)
