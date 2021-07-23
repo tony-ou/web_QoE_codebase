@@ -23,7 +23,7 @@ It is possible to do page recording in batch, but the public version of WPT does
 
 Often times, we want to modify page loading process and ask users to rate changed page. We can modify page's source code and achieve the effect (sometimes this would be very hard), but a much more straightforward way is to modify a video of page load (an example is: [base video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/baseline.mp4) and [modified video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/LoadA_delay1.mp4)). 
 
-To do this, we start with a baseline page load video, either using a real page load video or creating an artificial one from image of page (see more on how to do this in the example jupyter notebooks mentioned later). Then, we can apply many transformations: delaying/speeding elements of a page or even repositioning certain elements. We use a Python library, [Moviepy](https://zulko.github.io/moviepy/), to achieve these effects. Example jupyter notebooks can be found here. 
+To do this, we start with a baseline page load video, either using a real page load video or creating an artificial one from image of page (see more on how to do this in the example jupyter notebooks mentioned later). Then, we can apply many transformations: delaying/speeding elements of a page or even repositioning certain elements. We use a Python library, [Moviepy](https://zulko.github.io/moviepy/), to achieve these effects. Example jupyter notebooks can be found [here](https://github.com/tony-ou/web_QoE_video_creation). 
 
 We can also edit videos with other tools like adobe premiere pro.
 
@@ -32,7 +32,7 @@ Lastly, to make a web page load video more similar to real loading process, we a
 ## Step 2: Collect User Ratings on Mturk
 After we created videos, we need to create experiment interfaces and find people to do our experiment. Amazon Mturk comes handy for this purpose: it is a crowdsourcing platform where you pay to find people on the platform (called Turkers) to do your experiment (called HIT). 
 
-The way we run QoE study on Mturk is like this: we host our own web page server (codebase for this is here [Crowdsourcing study](https://www.webpagetest.org/), and publish the link to our survey page on Mturk. (So Mturk is simply an entry point for publishing our urls to real people).
+The way we run QoE study on Mturk is like this: we host our own web page server (codebase for this is here [Crowdsourcing study](https://github.com/tony-ou/web_QoE_user_study), and publish the link to our survey page on Mturk. (So Mturk is simply an entry point for publishing our urls to real people).
 
 
 ### Running MTurk Survey
@@ -59,7 +59,7 @@ Some Tips for crowdsourced mturk study:
 4. Workers search for HITs by hourly rate, so give reasonable payment to make the study finish faster. (But don't pay too much, the cost is high since Mturk also takes about 30% platform fee)
 
 ## Step 3: Analyze Data
-After we collected data, we should filter out bad responses and create plots/statistics for our data points. Then use these data points to check if experiment confirms/rebuts the hypothesis. How this is done is also included in the link for server codebase for this is here ([Crowdsourcing study(https://www.webpagetest.org/). 
+After we collected data, we should filter out bad responses and create plots/statistics for our data points. Then use these data points to check if experiment confirms/rebuts the hypothesis. How this is done is also included in the link for server codebase for this is here ([Crowdsourcing study(https://github.com/tony-ou/web_QoE_user_study). 
 
 
 # II. Other Resources
@@ -72,4 +72,3 @@ https://drive.google.com/file/d/1FAdnkJYzjX6kjI79ouP2zQmxX8hjwE2N/view?usp=shari
 
 
 ## [WebGaze](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kelton) Dataset (their original website is down)
-
