@@ -19,7 +19,7 @@ There are two ways to create a video: one is to record the actual loading proces
 It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). This is a good tutorial on this.
 
 
-### Use editing tools: 
+### B. Use editing tools: 
 
 Often times, we want to modify page loading process and ask users to rate changed page. We can modify page's source code and achieve the effect (sometimes this would be very hard), but a much more straightforward way is to modify a video of page load. 
 
