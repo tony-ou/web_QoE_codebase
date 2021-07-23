@@ -9,9 +9,12 @@ Hence, a user study consists of three steps: 1.create the videos of page loads, 
 
 
 ## Step 1: Create Page Load Videos
-There are two ways to create a video: one is to record the actual loading process of page, second is to use editing tools to create custom loading process.
+There are two ways to create a video: one is to record the actual loading process of a page, second is to use editing tools to create custom loading process.
 
 ### Record actual page load process
+   ![wpt](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
+
+
 
 ### Record actual page load process
 
