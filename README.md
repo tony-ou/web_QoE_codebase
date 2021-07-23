@@ -10,7 +10,7 @@ https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/
 
 
 2. Crowdsourced QoE Experiment
-3. Video Creation
+3. Webpage video recording & Video Editing:
 4. Saliency SpeedIndex 
 ### Problems(solved)
 
