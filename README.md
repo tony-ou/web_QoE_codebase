@@ -7,11 +7,12 @@ This repository gives guidance for running a crowdsourced user study on Web QoE.
 
 
 
-## A. Step 1: Create Page Load Videos
+## Step 1: Create Page Load Videos
+Because crowdworkers have very different network setup, they have completely different page load experience if we just ask them to load an actual web page. Instead, the common techinique is to record a video of page load and let crowdsourced workers rate the quality of page load process shown in the video. 
 
-## B. Step 2: Collect User Ratings on Mturk
+## Step 2: Collect User Ratings on Mturk
 
-## C. Step 3: Analyze Data
+## Step 3: Analyze Data
 
 
 # II. Other Resources
