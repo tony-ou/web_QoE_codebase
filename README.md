@@ -1,8 +1,6 @@
 # web_QoE_guide
 This is a guide for webQoE research. If you have questions, please contact Yiyang Ou (at tony.ouyy@gmail.com)
 
-## Description
-
 This repository gives guidance for running a crowdsourced user study on Web QoE. A user study consists of two steps: first is to create videos of page loads, and the second is collect user ratings on page load videos and analyze the data. 
 
 ## Related Literature
