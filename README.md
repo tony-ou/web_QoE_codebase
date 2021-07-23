@@ -1,20 +1,20 @@
 
 This is a guide for webQoE research. If you have questions, please contact Yiyang Ou (at tony.ouyy@gmail.com)
 
-# QoE User Study
+# I. QoE User Study
 
 This repository gives guidance for running a crowdsourced user study on Web QoE. A user study consists of two steps: first is to create videos of page loads, and the second is collect user ratings on page load videos and analyze the data. 
 
 
 
-## Step 1: Create Page Load Videos
+## A. Step 1: Create Page Load Videos
 
-## Step 2: Collect User Ratings on Mturk
+## B. Step 2: Collect User Ratings on Mturk
 
-## Step 3: Analyze Data
+## C. Step 3: Analyze Data
 
 
-# Other Resources
+# II. Other Resources
 
 ## Related Literature
 To gain more context on QoE research and Crowdsourcing techinques, one can refer to literature in following doc as a start point: 
