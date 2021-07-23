@@ -14,7 +14,7 @@ There are two ways to create a video: one is to record the actual loading proces
 ### A. Record actual page load process
 [WebPageTest](https://www.webpagetest.org/) is a tool for measuring webpages' performance. You can configure network condition (e.g. bandwidth, RTT) and collect metrics like SpeedIndex of the webpage. Additionally, it has a functionality to record the video o page load. **To get high resolution video you should check the box as below.**
 
-   ![wpt](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
+   ![wpt](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/wpt.png)
 
 It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). This is a good tutorial on this.
 
