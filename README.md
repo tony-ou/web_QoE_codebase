@@ -11,9 +11,12 @@ Hence, a user study consists of three steps: 1.create the videos of page loads, 
 ## Step 1: Create Page Load Videos
 There are two ways to create a video: one is to record the actual loading process of a page, second is to use editing tools to create custom loading process.
 
-### Record actual page load process
+### A. Record actual page load process
+[WebPageTest](https://www.webpagetest.org/) is a tool for measuring webpages' performance. You can configure network condition (e.g. bandwidth, RTT) and collect metrics like SpeedIndex of the webpage. Additionally, it has a functionality to record the video o page load. **To get high resolution video you should check the box as below.**
+
    ![wpt](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
 
+It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). This is a good tutorial on this.
 
 
 ### Record actual page load process
@@ -31,3 +34,6 @@ https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/
 
 https://drive.google.com/file/d/1FAdnkJYzjX6kjI79ouP2zQmxX8hjwE2N/view?usp=sharing
 
+## Amazon EC2
+
+## Mturk
