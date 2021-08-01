@@ -16,7 +16,7 @@ There are two ways to create a video: one is to record the actual loading proces
 
    ![wpt](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/wpt.png)
 
-It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). (![A Step by Step Guide to setting up an AutoScaling Private WebPageTest instance]https://www.robinosborne.co.uk/2019/05/20/a-step-by-step-guide-to-setting-up-an-autoscaling-private-webpagetest-instance/)
+It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). ([A Step by Step Guide to setting up an AutoScaling Private WebPageTest instance] https://www.robinosborne.co.uk/2019/05/20/a-step-by-step-guide-to-setting-up-an-autoscaling-private-webpagetest-instance/)
 
 
 ### B. Use editing tools: 
