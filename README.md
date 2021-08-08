@@ -25,11 +25,11 @@ Mturk is the crowdsourcing platform we use.
 2. Create a new project using their "Survey Link" template.
 
 3. Fill out the survey properties. Here is an example of my settings:
-   ![MTurk Settings](https://github.com/sheric98/QoEProject/blob/master/static/MTurk_Settings.png)
+   ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/MTurk_Settings.PNG)
 
 4. Click on Design Layout. Click on "Source" in the editor to edit the text.
    Here is an exmaple of my layout:
-   ![Design Layout](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
+   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/Design_Layout.PNG)
 
    Remember to change the link correspondingly if you changed the port number.
    ```shell
