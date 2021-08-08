@@ -16,9 +16,9 @@ Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
 
 ## Step 3: Start Amazon Mturk Campaign
 
-Mturk is the crowdsourcing platform we ran QoE study on.
+Mturk is the crowdsourcing platform we use.
 
-### Running MTurk Survey
+### Running MTurk Campaign
 
 1. Login to [Amazon Requester](https://requester.mturk.com/begin_signin) using your Amazon account.
 
