@@ -25,7 +25,7 @@ Mturk is the crowdsourcing platform we use.
 2. Create a new project using their "Survey Link" template.
 
 3. Fill out the survey properties. Here is an example of my settings:
-   ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/MTurk_Settings.PNG)
+   ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/files/MTurk_Settings.PNG)
 
 4. Click on Design Layout. Click on "Source" and replace with following script. Remember to change the **URL_to_webpage** (ctrl-f to find it) field to url of the experiment page.
    ```shell
@@ -98,7 +98,7 @@ Mturk is the crowdsourcing platform we use.
    ```
    
     Here is what the page looks like. Click `Survey` should bring you to the experiment page.:
-   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/Design_Layout.PNG)
+   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/files/Design_Layout.PNG)
 
 
 5. Finish and publish a batch.
