@@ -25,13 +25,9 @@ Mturk is the crowdsourcing platform we use.
 2. Create a new project using their "Survey Link" template.
 
 3. Fill out the survey properties. Here is an example of my settings:
-   ![MTurk Settings](https://github.com/sheric98/QoEProject/blob/master/static/MTurk_Settings.png)
+   ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/files/MTurk_Settings.PNG)
 
-4. Click on Design Layout. Click on "Source" in the editor to edit the text.
-   Here is an exmaple of my layout:
-   ![Design Layout](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
-
-   Remember to change the link correspondingly if you changed the port number.
+4. Click on Design Layout. Click on "Source" and replace with following script. Remember to change the **URL_to_webpage** (ctrl-f to find it) field to url of the experiment page.
    ```shell
    <p>When you are finished, you will return to this page to paste the code into the box.</p>
 
@@ -100,6 +96,11 @@ Mturk is the crowdsourcing platform we use.
      });
    </script><!-- Close internal javascript -->
    ```
+   
+    Here is what the page looks like. Click `Survey` should bring you to the experiment page.:
+   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/files/Design_Layout.PNG)
+
+
 5. Finish and publish a batch.
 
 Some Tips for crowdsourced mturk study: 
@@ -119,4 +120,8 @@ To gain more context on QoE research and Crowdsourcing techinques, one can refer
 https://docs.google.com/document/d/13Ny75k_Co0_usEhkLoT2eaFspbsSLcSGhQg4QzgW3vk/edit?usp=sharing
 
 
-## [WebGaze](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kelton) Dataset (their original website is down)
+## WebGaze Dataset 
+
+Paper can be found: https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kelton
+
+I saved a copy of the dataset here: https://drive.google.com/drive/u/0/folders/13MJ7lCZjci5tW6o6gIkahCC2b4vyRcrN
