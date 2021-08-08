@@ -27,9 +27,7 @@ Mturk is the crowdsourcing platform we use.
 3. Fill out the survey properties. Here is an example of my settings:
    ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/MTurk_Settings.PNG)
 
-4. Click on Design Layout. Click on "Source" in the editor to edit the text.
-  
-   Replace the source with following script. Remember to change the .
+4. Click on Design Layout. Click on "Source" and replace with following script. Remember to change the **URL_to_webpage** to url of the experiment page.
    ```shell
    <p>When you are finished, you will return to this page to paste the code into the box.</p>
 
@@ -43,7 +41,7 @@ Mturk is the crowdsourcing platform we use.
       <tbody>
          <tr>
             <td><label>Survey link:</label></td>
-            <td><a class="dont-break-out" href="**URL_to_webpage**">Survey</a></td>
+            <td><a class="dont-break-out" href="URL_to_webpage">Survey</a></td>
          </tr>
       </tbody>
    </table>
