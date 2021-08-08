@@ -9,31 +9,14 @@ Hence, a user study consists of three steps: 1.create the videos of page loads, 
 
 
 ## Step 1: Create Page Load Videos
-There are two ways to create a video: one is to record the actual loading process of a page, second is to use editing tools to create custom loading process.
+Tutorial can be found: https://github.com/tony-ou/web_QoE_video_creation/
 
-### A. Record actual page load process
-[WebPageTest](https://www.webpagetest.org/) is a tool for measuring webpages' performance. You can configure network condition (e.g. bandwidth, RTT) and collect metrics like SpeedIndex of the webpage. Additionally, it has a functionality to record the video o page load. **To get high resolution video you should check the box as below.**
+## Step 2: Configure server and host experiment page
+Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
 
-   ![wpt](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/wpt.png)
+## Step 3: Start Amazon Mturk Campaign
 
-It is possible to do page recording in batch, but the public version of WPT doesn't supports this feature. So you need to set up your own WPT server (e.g. on Amazon EC2). ([A Step by Step Guide to setting up an AutoScaling Private WebPageTest instance](https://www.robinosborne.co.uk/2019/05/20/a-step-by-step-guide-to-setting-up-an-autoscaling-private-webpagetest-instance/))
-
-
-### B. Use editing tools: 
-
-Often times, we want to modify page loading process and ask users to rate changed page. We can modify page's source code and achieve the effect (sometimes this would be very hard), but a much more straightforward way is to modify a video of page load (an example is: [base video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/baseline.mp4) and [modified video](https://github.com/tony-ou/web_QoE_guide/blob/main/video_creation/LoadA_delay1.mp4)). 
-
-To do this, we start with a baseline page load video, either using a real page load video or creating an artificial one from image of page (see more on how to do this in the example jupyter notebooks mentioned later). Then, we can apply many transformations: delaying/speeding elements of a page or even repositioning certain elements. We use a Python library, [Moviepy](https://zulko.github.io/moviepy/), to achieve these effects. Example jupyter notebooks can be found [here](https://github.com/tony-ou/web_QoE_video_creation/blob/main/video_creation.ipynb). 
-
-We can also edit videos with other tools like adobe premiere pro.
-
-Lastly, to make a web page load video more similar to real loading process, we add a browser header to the video. (Script for this are found in the jupyter nobteook examples)
-
-## Step 2: Collect User Ratings on Mturk
-After we created videos, we need to create experiment interfaces and find people to do our experiment. Amazon Mturk comes handy for this purpose: it is a crowdsourcing platform where you pay to find people on the platform (called Turkers) to do your experiment (called HIT). 
-
-The way we run QoE study on Mturk is like this: we host our own web page server (codebase for this is here [Crowdsourcing study](https://github.com/tony-ou/web_QoE_user_study), and publish the link to our survey page on Mturk. (So Mturk is simply an entry point for publishing our urls to real people).
-
+Mturk is the crowdsourcing platform we ran QoE study on.
 
 ### Running MTurk Survey
 
@@ -49,7 +32,74 @@ The way we run QoE study on Mturk is like this: we host our own web page server 
    ![Design Layout](https://github.com/sheric98/QoEProject/blob/master/static/Design_Layout.png)
 
    Remember to change the link correspondingly if you changed the port number.
+   ```shell
+   <p>When you are finished, you will return to this page to paste the code into the box.</p>
 
+   <div class="row" id="workContent">
+   <div class="col-xs-12 col-md-6 col-md-offset-3"><!-- Content for Worker -->
+   <table class="table table-condensed table-bordered">
+      <colgroup>
+         <col class="col-xs-4 col-md-4" />
+         <col class="col-xs-8 col-md-8" />
+      </colgroup>
+      <tbody>
+         <tr>
+            <td><label>Survey link:</label></td>
+            <td><a class="dont-break-out" href="URL_to_webpage">Survey</a></td>
+         </tr>
+      </tbody>
+   </table>
+   <!-- End Content for Worker --><!-- Input from Worker -->
+
+   <div class="form-group"><label for="surveycode">Provide the survey code here:</label> <input class="form-control" id="surveycode" name="surveycode" placeholder="e.g. 123456" required="" type="text" /></div>
+   <!-- End input from Worker --></div>
+   </div>
+   <!-- End Survey Link Layout --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
+   <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- Open internal style sheet -->
+   <style type="text/css">#collapseTrigger{
+     color:#fff;
+     display: block;
+     text-decoration: none;
+   }
+   #submitButton{
+     white-space: normal;
+   }
+   .image{
+     margin-bottom: 15px; 
+   }
+   /* CSS for breaking long words/urls */
+   .dont-break-out {
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     -ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   </style>
+   <!-- Close internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
+     $(document).ready(function() {
+       // Instructions expand/collapse
+       var content = $('#instructionBody');
+       var trigger = $('#collapseTrigger');
+       content.hide();
+       $('.collapse-text').text('(Click to expand)');
+       trigger.click(function(){
+         content.toggle();
+         var isVisible = content.is(':visible');
+         if(isVisible){
+           $('.collapse-text').text('(Click to collapse)');
+         }else{
+           $('.collapse-text').text('(Click to expand)');
+         }
+       });
+       // end expand/collapse
+     });
+   </script><!-- Close internal javascript -->
+   ```
 5. Finish and publish a batch.
 
 Some Tips for crowdsourced mturk study: 
@@ -58,9 +108,8 @@ Some Tips for crowdsourced mturk study:
 3. Pay attention to the email after experiment starts, in case workers complain that server is down.
 4. Workers search for HITs by hourly rate, so give reasonable payment to make the study finish faster. (But don't pay too much, the cost is high since Mturk also takes about 30% platform fee)
 
-## Step 3: Analyze Data
-After we collected data, we should filter out bad responses and create plots/statistics for our data points. Then use these data points to check if experiment confirms/rebuts the hypothesis. How this is done is also included in the link for server codebase for this is here ([Crowdsourcing study(https://github.com/tony-ou/web_QoE_user_study). 
-
+## Step 4: Analyze Data
+Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
 
 # II. Other Resources
 
