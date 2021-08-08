@@ -28,10 +28,8 @@ Mturk is the crowdsourcing platform we use.
    ![MTurk Settings](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/MTurk_Settings.PNG)
 
 4. Click on Design Layout. Click on "Source" in the editor to edit the text.
-   Here is an exmaple of my layout:
-   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/Design_Layout.PNG)
-
-   Remember to change the link correspondingly if you changed the port number.
+  
+   Replace the source with following script. Remember to change the .
    ```shell
    <p>When you are finished, you will return to this page to paste the code into the box.</p>
 
@@ -45,7 +43,7 @@ Mturk is the crowdsourcing platform we use.
       <tbody>
          <tr>
             <td><label>Survey link:</label></td>
-            <td><a class="dont-break-out" href="URL_to_webpage">Survey</a></td>
+            <td><a class="dont-break-out" href="**URL_to_webpage**">Survey</a></td>
          </tr>
       </tbody>
    </table>
@@ -100,6 +98,11 @@ Mturk is the crowdsourcing platform we use.
      });
    </script><!-- Close internal javascript -->
    ```
+   
+    Here is what the page looks like. Click `Survey` should bring you to the experiment page.:
+   ![Design Layout](https://github.com/tony-ou/web_QoE_guide/blob/main/sample_files/Design_Layout.PNG)
+
+
 5. Finish and publish a batch.
 
 Some Tips for crowdsourced mturk study: 
