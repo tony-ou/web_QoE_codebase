@@ -22,7 +22,7 @@ Hence, a user study consists of three steps: 1.create the videos of page loads, 
 Tutorial can be found: https://github.com/tony-ou/web_QoE_video_creation/
 
 ## Step 2: Configure server and host experiment page
-Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
+Tutorial can be found: https://github.com/tony-ou/web_QoE_user_study#configure-the-server-and-host-the-survey-page
 
 ## Step 3: Start Amazon Mturk Campaign
 
@@ -120,7 +120,7 @@ Some Tips for crowdsourced mturk study:
 4. Workers search for HITs by hourly rate, so give reasonable payment to make the study finish faster. (But don't pay too much, the cost is high since Mturk also takes about 30% platform fee)
 
 ## Step 4: Analyze collected responses
-Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
+Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study#analyze-collected-responses
 
 # II. Other Resources
 
