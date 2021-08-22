@@ -1,6 +1,16 @@
 
 This is a guide for webQoE research. If you have questions, please contact Yiyang Ou (at tony.ouyy@gmail.com)
 
+Table of contents:
+- QoE User Study
+   - Create Page Load Videos
+   - Configure server and host experiment page
+   - Start Amazon Mturk Campaign
+   - Analyze collected responses
+- Other Resources
+   - Related literature
+   - WebGaze Dataset 
+
 # I. QoE User Study
 
 This repository gives guidance for collecting user QoE on a web page through crowdsourcing. Because crowdworkers have very different network setup, they have completely different page load experience if we just ask them to load an actual web page. Instead, the common techinique is to record a video of page load and let crowdsourced workers rate the quality of page load process shown in the video. 
@@ -109,7 +119,7 @@ Some Tips for crowdsourced mturk study:
 3. Pay attention to the email after experiment starts, in case workers complain that server is down.
 4. Workers search for HITs by hourly rate, so give reasonable payment to make the study finish faster. (But don't pay too much, the cost is high since Mturk also takes about 30% platform fee)
 
-## Step 4: Analyze Data
+## Step 4: Analyze collected responses
 Tutorial can be found:  https://github.com/tony-ou/web_QoE_user_study/
 
 # II. Other Resources
